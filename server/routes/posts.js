@@ -1,9 +1,12 @@
-import { Express } from "express";
+import express from "express";
+
+import { getPosts } from '../controllers/posts.js';
 
 const router = express.Router();
 
-router.get('/', () => {
-    resizeBy.send('THIS WORKS');
-});
+router.get('/', getPosts);
+
+
+
 
 export default router;
